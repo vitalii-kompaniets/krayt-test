@@ -9,12 +9,8 @@
   justify-content: space-between;
 }
 
-.footer-right {
-  display: flex;
-  justify-content: space-between;
-}
-
 .footer-logo {
+  margin-bottom: 16px;
   font-family: "Lora", sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -23,79 +19,84 @@
 }
 
 .footer-about {
+  margin-bottom: 32px;
+  width: 255px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #f8f8f8;
+  opacity: 0.85;
+}
+
+.footer-icons {
+  display: flex;
+}
+
+.footer-icons-item {
+  margin-right: 20px;
+}
+
+.footer-icons-item:last-child {
+  margin-right: 0;
+}
+
+.footer-icons-item .fa-brands {
+  font-size: 22px;
+  color: #fff;
+}
+
+.footer-icons-item .fa-brands:hover {
+  color: #ff5722;
+  cursor: pointer;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
 }
 
 .footer-col {
-  margin-right: 30px;
+  margin-right: 68px;
 }
 
 .footer-col:last-child {
   margin-right: 0;
 }
 
-.footer-col a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.footer-col a:hover {
-  text-decoration: underline;
-}
-
-// .footer-col p {
-//   margin-bottom: 14px;
-// }
-
-// .footer-col p:last-child {
-//   margin-bottom: 0;
-// }
-
 .footer-col-title {
+  margin-bottom: 24px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: #ffffff;
+  color: #fff;
+  opacity: 0.5;
 }
 
-// .footer-list {
-//   margin: 0;
-//   padding: 0;
-//   list-style-type: none;
-//   font-size: 18px;
-//   font-weight: 400;
-// }
-
-.footer-col-info {
-  width: 200px;
+.footer-col a,
+.footer-col p {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
 }
 
-.footer-col-services {
-  width: 240px;
-}
-
-.footer-col-contacts {
-  width: 200px;
+.footer-col a:hover {
+  color: #ff5722;
 }
 
 .footer-list-item {
-  margin-bottom: 14px;
+  margin-bottom: 9px;
 }
 
 .footer-list-item:last-child {
   margin-bottom: 0;
 }
 
-.footer-list-item a {
-  text-decoration: none;
-  color: #fff;
-}
-
 .footer-list-item a:hover {
-  text-decoration: underline;
+  color: #ff5722;
 }

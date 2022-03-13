@@ -138,7 +138,7 @@ h6 {
           box-shadow: 0px 4px 16px rgba(255, 87, 34, 0.32);
 }
 .signup-btn {
-  padding: 10px 24px;
+  padding: 12px 24px;
   font-weight: 700;
   font-size: 16px;
   color: #ff5722;
@@ -198,6 +198,9 @@ h6 {
 }
 .section-header {
   margin-bottom: 115px;
+}
+.section-our-spaces {
+  margin-bottom: 150px;
 }
 .our-spaces_content {
   position: relative;
@@ -291,8 +294,9 @@ h6 {
   background-color: #fff;
   color: #9a9a9a;
 }
-.section-our-spaces {
-  margin-bottom: 150px;
+.our-spaces_arrow-left:hover,
+.our-spaces_arrow-right:hover {
+  color: #ff5722;
 }
 .why-frispes-content {
   display: -webkit-box;
@@ -504,6 +508,10 @@ h6 {
   background-color: #fff;
   color: #9a9a9a;
 }
+.frispes-gallery_arrow-left:hover,
+.frispes-gallery_arrow-right:hover {
+  color: #ff5722;
+}
 .section-who-use-frisper {
   margin-bottom: 112px;
 }
@@ -542,6 +550,27 @@ h6 {
   position: relative;
   height: 625px;
   margin-bottom: 112px;
+}
+.reviews_arrow-left {
+  position: absolute;
+  top: 105px;
+  right: 360px;
+  font-size: 28px;
+  background-color: #fff;
+  color: #9a9a9a;
+}
+.reviews_arrow-right {
+  width: 28px;
+  position: absolute;
+  top: 105px;
+  right: 250px;
+  font-size: 28px;
+  background-color: #fff;
+  color: #9a9a9a;
+}
+.reviews_arrow-left:hover,
+.reviews_arrow-right:hover {
+  color: #ff5722;
 }
 .section-reviews_heading {
   margin-bottom: 56px;
@@ -670,7 +699,7 @@ h6 {
 .faq-slider_item:last-child {
   margin-right: 0;
 }
-.faq-slider_item.active {
+.faq-slider_item:hover {
   color: #fff;
   background-color: #ff5722;
 }
@@ -700,7 +729,8 @@ h6 {
   color: #fff;
   background-color: #ff5722;
 }
-.faq-slider_item-button.active {
+.faq-slider_item-button:hover {
+  cursor: pointer;
   color: #ff5722;
   background-color: #fff;
   -webkit-box-shadow: 0px 4px 16px rgba(221, 44, 0, 0.24);
@@ -772,23 +802,19 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 30px;
 }
 .main-content__first-card {
-  width: 730px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: 30px;
 }
 .first-card__img {
-  width: 50%;
+  width: 350px;
 }
 .first-card__desc {
-  width: 50%;
+  width: 380px;
   padding: 32px;
   background-color: #fff;
 }
@@ -862,9 +888,6 @@ h6 {
   -webkit-box-shadow: 0px 4px 16px rgba(223, 223, 223, 0.5);
           box-shadow: 0px 4px 16px rgba(223, 223, 223, 0.5);
 }
-.small-card__img {
-  margin-bottom: 14px;
-}
 .small-card__desc {
   padding: 16px;
 }
@@ -883,9 +906,6 @@ h6 {
   line-height: 26px;
   color: #9a9a9a;
 }
-.reviews-autor__avatar {
-  width: 56px;
-}
 .footer {
   padding-top: 55px;
   padding-bottom: 100px;
@@ -899,15 +919,8 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.footer-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 .footer-logo {
+  margin-bottom: 16px;
   font-family: "Lora", sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -915,52 +928,77 @@ h6 {
   color: #ffffff;
 }
 .footer-about {
+  margin-bottom: 32px;
+  width: 255px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #f8f8f8;
+  opacity: 0.85;
+}
+.footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-icons-item {
+  margin-right: 20px;
+}
+.footer-icons-item:last-child {
+  margin-right: 0;
+}
+.footer-icons-item .fa-brands {
+  font-size: 22px;
+  color: #fff;
+}
+.footer-icons-item .fa-brands:hover {
+  color: #ff5722;
+  cursor: pointer;
+}
+.footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
 }
 .footer-col {
-  margin-right: 30px;
+  margin-right: 68px;
 }
 .footer-col:last-child {
   margin-right: 0;
 }
-.footer-col a {
-  text-decoration: none;
-  color: #fff;
-}
-.footer-col a:hover {
-  text-decoration: underline;
-}
 .footer-col-title {
+  margin-bottom: 24px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: #ffffff;
+  color: #fff;
+  opacity: 0.5;
 }
-.footer-col-info {
-  width: 200px;
+.footer-col a,
+.footer-col p {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
 }
-.footer-col-services {
-  width: 240px;
-}
-.footer-col-contacts {
-  width: 200px;
+.footer-col a:hover {
+  color: #ff5722;
 }
 .footer-list-item {
-  margin-bottom: 14px;
+  margin-bottom: 9px;
 }
 .footer-list-item:last-child {
   margin-bottom: 0;
 }
-.footer-list-item a {
-  text-decoration: none;
-  color: #fff;
-}
 .footer-list-item a:hover {
-  text-decoration: underline;
+  color: #ff5722;
 }
 /*# sourceMappingURL=main.css.map */
