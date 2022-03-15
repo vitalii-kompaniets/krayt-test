@@ -63,8 +63,7 @@ img {
 h1 {
   font-family: "Lora", sans-serif;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 51px;
+  // font-size: 40px;
 }
 
 h4 {
@@ -72,19 +71,25 @@ h4 {
   margin-bottom: 8px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  // font-size: 20px;
   color: #222831;
 }
 
 h2,
-h3,
-h5,
-h6 {
+h3 {
   font-size: inherit;
   font-weight: inherit;
 }
 
 .container {
-  width: 1110px;
+  max-width: 340px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    max-width: 860px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1110px;
+  }
 }
