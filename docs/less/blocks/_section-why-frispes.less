@@ -1,81 +1,172 @@
 .why-frispes-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 115px;
+  @media (min-width: 340px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 115px;
+  }
 }
 
 .why-frispes-content_left-info {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  width: 540px;
-  height: 420px;
-  padding: 45px;
+  @media (min-width: 340px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 45px;
+  }
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1200px) {
+    width: 540px;
+    height: 420px;
+  }
 }
 
 .statistics_item-icon {
   width: 32px;
   height: 32px;
   margin-right: 24px;
+
+  // width: 28px;
 }
 
 .left-info-statistics_item {
-  display: flex;
-  justify-self: center;
-  align-self: center;
+  @media (min-width: 340px) {
+    display: flex;
+    align-self: center;
+    margin-right: 35px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 0;
+  }
 }
 
 .statistics_item-info-title {
-  margin-bottom: 8px;
-  font-family: "Lora", sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  color: #10375c;
+  @media (min-width: 340px) {
+    margin-bottom: 8px;
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #10375c;
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 32px;
+  }
 }
 
 .statistics_item-info-desc {
-  font-family: "Lato";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #9a9a9a;
+  @media (min-width: 340px) {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9a9a9a;
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 .why-frispes-content_right-info {
-  width: 540px;
-  height: 420px;
-  padding: 53px;
-  background-color: #10375c;
-  color: #fff;
+  @media (min-width: 340px) {
+    padding: 53px;
+    background-color: #10375c;
+    color: #fff;
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1200px) {
+    width: 540px;
+    height: 420px;
+  }
 }
 
 .right-info__subtitle h4 {
-  position: relative;
-  color: #fff;
+  @media (min-width: 340px) {
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 .right-info__subtitle h4::after {
-  position: absolute;
-  content: "";
-  top: 13px;
-  left: 120px;
-  width: 73px;
-  height: 2px;
-  background-color: #fff;
+  @media (min-width: 340px) {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 90px;
+    width: 73px;
+    height: 2px;
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1200px) {
+    top: 13px;
+    left: 120px;
+  }
 }
 
 .right-info__title {
-  font-family: "Lora", sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 51px;
-  margin-bottom: 24px;
+  @media (min-width: 340px) {
+    font-family: "Lora", sans-serif;
+    font-weight: 700;
+    line-height: 32px;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 51px;
+    margin-bottom: 24px;
+  }
 }
 
 .right-info__desc {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  @media (min-width: 340px) {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
