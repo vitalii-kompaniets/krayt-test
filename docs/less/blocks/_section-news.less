@@ -1,23 +1,43 @@
 .section-news {
-  padding-bottom: 95px;
+  padding-bottom: 65px;
   background-color: #f8f8f8;
+
+  @media (min-width: 768px) {
+    padding-bottom: 95px;
+  }
 }
 
 .section-news_heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-top: 60px;
-  margin-bottom: 55px;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 30px;
+
+  @media (min-width: 768px) {
+    width: unset;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 60px;
+    margin-bottom: 55px;
+  }
 }
 
 .section-news__title {
-  font-size: 40px;
+  margin-bottom: 20px;
+  font-size: 24px;
   color: #10375c;
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+  }
 }
 
 .section-news__see-more {
-  display: flex;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .section-news__see-more a {
@@ -42,14 +62,22 @@
 }
 
 .main-content_upper-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
 }
 
 .main-content__first-card {
   display: flex;
   margin-right: 30px;
+
+  &:hover {
+    box-shadow: 0px 4px 16px rgba(223, 223, 223, 0.5);
+  }
 }
 
 .first-card__img {
@@ -110,23 +138,34 @@
 
 .main-content_bottom-row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-content__small-card {
-  width: 350px;
-  margin-right: 30px;
+  width: 300px;
+  margin-bottom: 20px;
   background-color: #fff;
-}
 
-.main-content__small-card:last-child {
-  margin-right: 0;
-}
+  @media (min-width: 768px) {
+    width: 350px;
+    margin-right: 30px;
 
-.main-content__small-card:hover,
-.main-content__first-card:hover {
-  box-shadow: 0px 4px 16px rgba(223, 223, 223, 0.5);
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      box-shadow: 0px 4px 16px rgba(223, 223, 223, 0.5);
+    }
+  }
 }
 
 .small-card__desc {

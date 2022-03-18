@@ -1,31 +1,71 @@
 .section-who-use-frisper {
-  margin-bottom: 112px;
+  margin-bottom: 62px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 112px;
+  }
 }
 
 .who-use-frisper_content-title {
-  margin-bottom: 24px;
+  margin-bottom: 15px;
   text-align: center;
   font-family: "Lora", sans-serif;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 51px;
-  color: #0d2c4a;
+  font-size: 24px;
+  line-height: 35px;
+  color: #10375c;
+
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 51px;
+  }
 }
 
 .who-use-frisper_content-desc {
-  margin-bottom: 72px;
+  margin-bottom: 37px;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   color: #9a9a9a;
+
+  @media (min-width: 768px) {
+    margin-bottom: 72px;
+  }
 }
 
 .who-use-frisper_company-logos {
-  width: 1175px;
+  width: 300px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-self: center;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (min-width: 1200px) {
+    width: 1175px;
+  }
+}
+
+.company-logos__item {
+  width: 120px;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    width: unset;
+    margin-bottom: 0;
+  }
 }
