@@ -551,7 +551,6 @@ h3 {
 }
 .carousel-item_btn {
   position: absolute;
-  content: "";
   bottom: 0;
   left: 0;
   padding: 28px 31px;
@@ -585,11 +584,11 @@ h3 {
   text-align: center;
   color: #222831;
 }
-.our-spaces_arrow-left {
+.our-spaces_control-btn-left {
   display: none;
 }
 @media (min-width: 1200px) {
-  .our-spaces_arrow-left {
+  .our-spaces_control-btn-left {
     display: block;
     position: absolute;
     top: 35px;
@@ -597,11 +596,11 @@ h3 {
     background-color: #fff;
   }
 }
-.our-spaces_arrow-right {
+.our-spaces_control-btn-right {
   display: none;
 }
 @media (min-width: 1200px) {
-  .our-spaces_arrow-right {
+  .our-spaces_control-btn-right {
     display: block;
     position: absolute;
     top: 35px;
@@ -984,8 +983,8 @@ h3 {
   .frispes-gallery__subtitle::after {
     position: absolute;
     content: "";
-    top: 13px;
-    left: 125px;
+    top: 12px;
+    left: 140px;
     width: 73px;
     height: 2px;
     background-color: #222831;
@@ -1090,22 +1089,24 @@ h3 {
     margin-bottom: 0;
   }
 }
-.frispes-gallery_arrows {
+.frispes-gallery_control-btn {
   display: none;
 }
 @media (min-width: 1200px) {
-  .frispes-gallery_arrows {
+  .frispes-gallery_control-btn {
     display: block;
   }
 }
-.frispes-gallery_arrow-left {
+.frispes-gallery_control-btn-left {
   margin-right: 25px;
   font-size: 28px;
   background-color: #fff;
+  cursor: pointer;
 }
-.frispes-gallery_arrow-right {
+.frispes-gallery_control-btn-right {
   font-size: 28px;
   background-color: #fff;
+  cursor: pointer;
 }
 .section-who-use-frisper {
   margin-bottom: 62px;
@@ -1226,14 +1227,14 @@ h3 {
     display: block;
   }
 }
-.reviews_arrow-left {
+.reviews_control-btn-left {
   position: absolute;
   top: 105px;
   right: 375px;
   font-size: 28px;
   background-color: #fff;
 }
-.reviews_arrow-right {
+.reviews_control-btn-right {
   position: absolute;
   top: 105px;
   right: 250px;
@@ -1278,7 +1279,7 @@ h3 {
     position: absolute;
     content: "";
     top: 13px;
-    left: 125px;
+    left: 85px;
     width: 73px;
     height: 2px;
     background-color: #222831;
@@ -1890,7 +1891,8 @@ h3 {
 }
 @media (min-width: 1200px) {
   .footer-about {
-    max-width: 250px;
+    width: 255px;
+    margin: 0;
     font-size: 16px;
     margin-bottom: 32px;
   }
