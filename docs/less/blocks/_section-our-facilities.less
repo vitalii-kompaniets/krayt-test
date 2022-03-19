@@ -2,7 +2,7 @@
   margin-bottom: 60px;
 
   @media (min-width: 768px) {
-    margin-bottom: 112px;
+    margin-bottom: 80px;
   }
   @media (min-width: 1200px) {
     margin-bottom: 112px;
@@ -12,6 +12,11 @@
 .our-facilities_heading {
   max-width: 300px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    max-width: 740px;
+    margin-bottom: 30px;
+  }
 
   @media (min-width: 1200px) {
     max-width: unset;
@@ -71,18 +76,42 @@
 .our-facilities_content {
   display: flex;
   justify-content: flex-start;
+
+  @media (min-width: 768px) {
+    max-width: 740px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    justify-content: flex-start;
+    max-width: unset;
+    margin: 0;
+  }
 }
 
 .our-facilities_content-left-info {
   width: 295px;
-  margin-right: 90px;
+
+  @media (min-width: 768px) {
+    margin-right: 40px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 90px;
+  }
 }
 
 .our-facilities-content-img {
   display: none;
 
   @media (min-width: 768px) {
+    max-width: 460px;
     display: block;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: unset;
   }
 }
 
@@ -100,5 +129,15 @@
   &:hover {
     color: #fff;
     background-color: #ff5722;
+  }
+
+  @media (min-width: 768px) {
+    padding: 18px;
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 24px;
+    font-size: 20px;
   }
 }

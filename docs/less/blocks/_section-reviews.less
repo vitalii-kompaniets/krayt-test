@@ -4,6 +4,10 @@
 
   @media (min-width: 768px) {
     height: 625px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: 1200px) {
     margin-bottom: 112px;
   }
 }
@@ -11,7 +15,7 @@
 .reviews_control-btn {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     display: block;
   }
 }
@@ -37,9 +41,13 @@
   margin: 0 auto;
   margin-bottom: 20px;
 
+  @media (min-width: 768px) {
+    max-width: 740px;
+    margin-bottom: 36px;
+  }
+
   @media (min-width: 1200px) {
     max-width: unset;
-    margin: 0;
     margin-bottom: 56px;
   }
 }
@@ -82,6 +90,10 @@
   color: #10375c;
 
   @media (min-width: 768px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 1200px) {
     width: 495px;
     font-size: 40px;
     margin-bottom: 50px;
@@ -96,11 +108,15 @@
 
   @media (min-width: 768px) {
     position: absolute;
-    left: 205px;
+    left: 70px;
     right: 0;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (min-width: 1200px) {
+    left: 205px;
   }
 }
 
@@ -118,6 +134,12 @@
   background-color: #10375c;
 
   @media (min-width: 768px) {
+    width: 235px;
+    height: 365px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: 1200px) {
     width: 445px;
     margin-bottom: 0;
     margin-right: 30px;
@@ -130,6 +152,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .reviews-autor {
@@ -139,22 +169,35 @@
 }
 
 .reviews-autor__avatar {
-  width: 56px;
+  width: 46px;
   height: auto;
   margin-right: 16px;
+
+  @media (min-width: 1200px) {
+    width: 56px;
+  }
 }
 
 .reviews-autor__name {
   margin-bottom: 4px;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
 }
 
 .reviews-autor__profession {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }

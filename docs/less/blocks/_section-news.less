@@ -11,23 +11,32 @@
   width: 300px;
   margin: 0 auto;
   padding-top: 30px;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
-    width: unset;
+    width: 740px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     padding-top: 60px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: 1200px) {
+    width: unset;
     margin-bottom: 55px;
   }
 }
 
 .section-news__title {
-  margin-bottom: 20px;
   font-size: 24px;
   color: #10375c;
 
   @media (min-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media (min-width: 1200px) {
     font-size: 40px;
   }
 }
@@ -59,24 +68,49 @@
 .section-news_main-content {
   display: flex;
   flex-wrap: wrap;
-}
-
-.main-content_upper-row {
-  display: none;
 
   @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1200px) {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
   }
 }
 
+// .main-content_upper-row {
+//   display: none;
+
+//   @media (min-width: 768px) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     margin-bottom: 20px;
+//   }
+
+//   @media (min-width: 1200px) {
+//     flex-wrap: nowrap;
+//     margin-bottom: 30px;
+//   }
+// }
+
 .main-content__first-card {
   display: flex;
-  margin-right: 30px;
+  margin-right: 20px;
 
   &:hover {
     box-shadow: 0px 4px 16px rgba(223, 223, 223, 0.5);
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    margin-right: 20px;
   }
 }
 
@@ -85,7 +119,8 @@
 }
 
 .first-card__desc {
-  width: 380px;
+  width: 370px;
+  height: 320px;
   padding: 32px;
   background-color: #fff;
 }
@@ -136,18 +171,23 @@
   color: #9a9a9a;
 }
 
-.main-content_bottom-row {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  margin: 0 auto;
+// .main-content_bottom-row {
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: nowrap;
+//   margin: 0 auto;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
+//   @media (min-width: 768px) {
+//     flex-wrap: wrap;
+//   }
+
+//   @media (min-width: 1200px) {
+//     flex-direction: row;
+//     flex-wrap: nowrap;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+// }
 
 .main-content__small-card {
   width: 300px;
@@ -156,15 +196,15 @@
 
   @media (min-width: 768px) {
     width: 350px;
-    margin-right: 30px;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    justify-self: center;
 
     &:hover {
       box-shadow: 0px 4px 16px rgba(223, 223, 223, 0.5);
     }
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 20px;
   }
 }
 
